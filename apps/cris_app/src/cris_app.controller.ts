@@ -4,6 +4,9 @@ import { EventPattern } from '@nestjs/microservices';
 
 @Controller()
 export class CrisAppController {
+  getHello(): any {
+    throw new Error('Method not implemented.');
+  }
   constructor(private readonly crisAppService: CrisAppService) {}
 
   //@Get()
