@@ -17,7 +17,7 @@ export class AppService {
 
     const newUser = this.userRepository.create(body);
     const savedUser = await this.userRepository.save(newUser);
-
+// guardamos el usuario
   
     this.clientCris.emit('new_cris', savedUser );
     return savedUser;

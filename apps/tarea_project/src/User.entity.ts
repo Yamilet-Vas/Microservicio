@@ -11,3 +11,4 @@ export class User {
     @Column()
     email: string;
 }
+// aqui declara las entidades del usuario 
